@@ -1,0 +1,7 @@
+services:
+  api:
+    image: ${DOCKERHUB_USERNAME}/app-cicd-ejercicio:latest
+    container_name: api_cicd_prod
+    restart: always
+    ports:
+      - "8000:8000"
