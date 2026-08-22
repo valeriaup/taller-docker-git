@@ -23,10 +23,10 @@ jobs:
           python-version: '3.11'
 
       - name: Instalar dependencias
-        run: pip install -r src/requirements.txt
+        run: pip install -r escenario-4-cicd/ejercicio/src/requirements.txt
 
       - name: Ejecutar tests
-        run: cd src && python -m pytest tests/ -v
+        run: cd escenario-4-cicd/ejercicio/src && python -m pytest tests/ -v
 
   build-and-push:
     needs: test
