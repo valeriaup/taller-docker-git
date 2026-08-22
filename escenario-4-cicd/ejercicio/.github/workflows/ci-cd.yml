@@ -2,10 +2,10 @@ name: CI/CD - Test, Build, Scan y Publish
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, develop, escenario-4-cicd ]
     tags: [ 'v*' ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, escenario-4-cicd ]
 
 env:
   IMAGE_NAME: app-cicd-ejercicio
